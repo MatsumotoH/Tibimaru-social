@@ -12,9 +12,12 @@
 		36248F331D9B0F7500388562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36248F311D9B0F7500388562 /* Main.storyboard */; };
 		36248F351D9B0F7500388562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36248F341D9B0F7500388562 /* Assets.xcassets */; };
 		36248F381D9B0F7500388562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36248F361D9B0F7500388562 /* LaunchScreen.storyboard */; };
+		36248F401D9B101B00388562 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36248F3F1D9B101B00388562 /* GoogleService-Info.plist */; };
+		8A24046CE0F18DEB7E8EAF8A /* Pods_Tibimaru_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762AD9594E3D3D019DD3F50E /* Pods_Tibimaru_social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FBAB2D29DC548BA2487FBEA /* Pods-Tibimaru-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tibimaru-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tibimaru-social/Pods-Tibimaru-social.debug.xcconfig"; sourceTree = "<group>"; };
 		36248F2A1D9B0F7500388562 /* Tibimaru-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tibimaru-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36248F2D1D9B0F7500388562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36248F2F1D9B0F7500388562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		36248F341D9B0F7500388562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36248F371D9B0F7500388562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36248F391D9B0F7500388562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36248F3F1D9B101B00388562 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		762AD9594E3D3D019DD3F50E /* Pods_Tibimaru_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tibimaru_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB081554774CEBDC55193BB4 /* Pods-Tibimaru-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tibimaru-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tibimaru-social/Pods-Tibimaru-social.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A24046CE0F18DEB7E8EAF8A /* Pods_Tibimaru_social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				36248F2C1D9B0F7500388562 /* Tibimaru-social */,
 				36248F2B1D9B0F7500388562 /* Products */,
+				FF0817B62C476401D64F0411 /* Pods */,
+				F79719CF77BBB6DADF5EBD15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		36248F2C1D9B0F7500388562 /* Tibimaru-social */ = {
 			isa = PBXGroup;
 			children = (
+				36248F431D9B144200388562 /* Controller */,
+				36248F421D9B142E00388562 /* View */,
+				36248F411D9B141700388562 /* Model */,
 				36248F2D1D9B0F7500388562 /* AppDelegate.swift */,
-				36248F2F1D9B0F7500388562 /* ViewController.swift */,
 				36248F311D9B0F7500388562 /* Main.storyboard */,
 				36248F341D9B0F7500388562 /* Assets.xcassets */,
 				36248F361D9B0F7500388562 /* LaunchScreen.storyboard */,
 				36248F391D9B0F7500388562 /* Info.plist */,
+				36248F3F1D9B101B00388562 /* GoogleService-Info.plist */,
 			);
 			path = "Tibimaru-social";
+			sourceTree = "<group>";
+		};
+		36248F411D9B141700388562 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		36248F421D9B142E00388562 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		36248F431D9B144200388562 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36248F2F1D9B0F7500388562 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F79719CF77BBB6DADF5EBD15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				762AD9594E3D3D019DD3F50E /* Pods_Tibimaru_social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0817B62C476401D64F0411 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FBAB2D29DC548BA2487FBEA /* Pods-Tibimaru-social.debug.xcconfig */,
+				AB081554774CEBDC55193BB4 /* Pods-Tibimaru-social.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36248F3C1D9B0F7500388562 /* Build configuration list for PBXNativeTarget "Tibimaru-social" */;
 			buildPhases = (
+				F3784BC87B84A0305EBEF19A /* [CP] Check Pods Manifest.lock */,
 				36248F261D9B0F7500388562 /* Sources */,
 				36248F271D9B0F7500388562 /* Frameworks */,
 				36248F281D9B0F7500388562 /* Resources */,
+				97CD2A3209E5E6B2920E50A7 /* [CP] Embed Pods Frameworks */,
+				497E04C7895DCF7AC735FBED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36248F401D9B101B00388562 /* GoogleService-Info.plist in Resources */,
 				36248F381D9B0F7500388562 /* LaunchScreen.storyboard in Resources */,
 				36248F351D9B0F7500388562 /* Assets.xcassets in Resources */,
 				36248F331D9B0F7500388562 /* Main.storyboard in Resources */,
@@ -131,6 +186,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		497E04C7895DCF7AC735FBED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tibimaru-social/Pods-Tibimaru-social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CD2A3209E5E6B2920E50A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tibimaru-social/Pods-Tibimaru-social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3784BC87B84A0305EBEF19A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36248F261D9B0F7500388562 /* Sources */ = {
@@ -259,6 +362,7 @@
 		};
 		36248F3D1D9B0F7500388562 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FBAB2D29DC548BA2487FBEA /* Pods-Tibimaru-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H26A2JQJ8N;
@@ -272,6 +376,7 @@
 		};
 		36248F3E1D9B0F7500388562 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB081554774CEBDC55193BB4 /* Pods-Tibimaru-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H26A2JQJ8N;
@@ -302,6 +407,7 @@
 				36248F3E1D9B0F7500388562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

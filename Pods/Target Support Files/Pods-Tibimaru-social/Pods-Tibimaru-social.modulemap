@@ -1,0 +1,6 @@
+framework module Pods_Tibimaru_social {
+  umbrella header "Pods-Tibimaru-social-umbrella.h"
+
+  export *
+  module * { export * }
+}
