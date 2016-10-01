@@ -23,7 +23,7 @@ class SignInVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.stringForKey(KEY_UID) {
-            print("JESS: ID found in keychain")
+            print("Tibimaru: ID found in keychain")
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
     }
@@ -38,7 +38,7 @@ class SignInVC: UIViewController {
             } else if result?.isCancelled == true {
                 print("Tibimaru: User cancelled Facebook authentication")
             } else {
-                print("JESS: Successfully authenticated with Facebook")
+                print("Tibimaru: Successfully authenticated with Facebook")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseAuth(credential)
             }
@@ -88,7 +88,7 @@ class SignInVC: UIViewController {
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirbaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.setString(id, forKey: KEY_UID)
-        print("JESS: Data saved to keychain \(keychainResult)")
+        print("Tibimaru: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }
     

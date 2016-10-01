@@ -19,6 +19,9 @@
 		36532D7A1D9DB9710082C650 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36532D791D9DB9710082C650 /* FancyField.swift */; };
 		36532D7C1D9DBA820082C650 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36532D7B1D9DBA820082C650 /* FancyBtn.swift */; };
 		36532D7E1D9DBACE0082C650 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36532D7D1D9DBACE0082C650 /* CircleView.swift */; };
+		365C14CE1D9F0FF500BF76E4 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365C14CD1D9F0FF500BF76E4 /* FeedVC.swift */; };
+		365C14D01D9F489800BF76E4 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365C14CF1D9F489800BF76E4 /* PostCell.swift */; };
+		367344451D9FAAD40003CC44 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367344441D9FAAD40003CC44 /* DataService.swift */; };
 		8A24046CE0F18DEB7E8EAF8A /* Pods_Tibimaru_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762AD9594E3D3D019DD3F50E /* Pods_Tibimaru_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		36532D7B1D9DBA820082C650 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		36532D7D1D9DBACE0082C650 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		365C14CC1D9EEFA200BF76E4 /* Tibimaru-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tibimaru-social.entitlements"; sourceTree = "<group>"; };
+		365C14CD1D9F0FF500BF76E4 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		365C14CF1D9F489800BF76E4 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		367344441D9FAAD40003CC44 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		762AD9594E3D3D019DD3F50E /* Pods_Tibimaru_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tibimaru_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB081554774CEBDC55193BB4 /* Pods-Tibimaru-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tibimaru-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tibimaru-social/Pods-Tibimaru-social.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +82,7 @@
 		36248F2C1D9B0F7500388562 /* Tibimaru-social */ = {
 			isa = PBXGroup;
 			children = (
+				367344431D9FAA9A0003CC44 /* Services */,
 				365C14CC1D9EEFA200BF76E4 /* Tibimaru-social.entitlements */,
 				362A4B8A1D9CC83F00407DFE /* Uti */,
 				36248F431D9B144200388562 /* Controller */,
@@ -105,6 +112,7 @@
 				36532D7B1D9DBA820082C650 /* FancyBtn.swift */,
 				36532D791D9DB9710082C650 /* FancyField.swift */,
 				36532D7D1D9DBACE0082C650 /* CircleView.swift */,
+				365C14CF1D9F489800BF76E4 /* PostCell.swift */,
 				36532D771D9DB84B0082C650 /* RoundBtn.swift */,
 			);
 			name = View;
@@ -114,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				36248F2F1D9B0F7500388562 /* SignInVC.swift */,
+				365C14CD1D9F0FF500BF76E4 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -124,6 +133,14 @@
 				362A4B8B1D9CC85800407DFE /* Constants.swift */,
 			);
 			name = Uti;
+			sourceTree = "<group>";
+		};
+		367344431D9FAA9A0003CC44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				367344441D9FAAD40003CC44 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		F79719CF77BBB6DADF5EBD15 /* Frameworks */ = {
@@ -273,14 +290,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365C14CE1D9F0FF500BF76E4 /* FeedVC.swift in Sources */,
 				36532D7E1D9DBACE0082C650 /* CircleView.swift in Sources */,
 				36532D7A1D9DB9710082C650 /* FancyField.swift in Sources */,
 				36248F301D9B0F7500388562 /* SignInVC.swift in Sources */,
 				36532D781D9DB84B0082C650 /* RoundBtn.swift in Sources */,
+				367344451D9FAAD40003CC44 /* DataService.swift in Sources */,
 				36248F2E1D9B0F7500388562 /* AppDelegate.swift in Sources */,
 				362A4B891D9CC82600407DFE /* FancyView.swift in Sources */,
 				362A4B8C1D9CC85800407DFE /* Constants.swift in Sources */,
 				36532D7C1D9DBA820082C650 /* FancyBtn.swift in Sources */,
+				365C14D01D9F489800BF76E4 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
